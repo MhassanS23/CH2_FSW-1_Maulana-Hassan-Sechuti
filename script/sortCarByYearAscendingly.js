@@ -40,7 +40,7 @@ function sortCarByYearAscendingly(cars) {
     } while (swapp);
     console.log(swapp)
 
-
+console.log(result)
 
   // Tulis code-mu disini
 
