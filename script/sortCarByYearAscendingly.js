@@ -21,21 +21,26 @@ function sortCarByYearAscendingly(cars) {
   console.log(result.length)
   console.log(cars)
   console.log(result)
-    let swapp;
+    let swapp = true;
     do {
+      console.log(swapp)
         swapp = false;
         for (let i = 0; i < result.length-1; i++) {
             if (result[i].year > result[i + 1].year) {
-                let temp = result[i];
+                let variabelKosong = result[i];
                 result[i] = result[i + 1];
-                result[i + 1] = temp;
+                result[i + 1] = variabelKosong;
                 swapp = true;
-                console.log('ini temp',temp.year, temp.manufacture, temp.id)
+                console.log('ini variabelKosong',variabelKosong.year, variabelKosong.manufacture, variabelKosong.id)
                 console.log('ini result[i]',result[i].year, result[i].manufacture, result[i].id)
                 console.log('ini result[i + 1]',result[i+1])
             }
+            console.log(i)
         }
     } while (swapp);
+    console.log(swapp)
+
+
 
   // Tulis code-mu disini
 

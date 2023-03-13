@@ -11,9 +11,9 @@ function sortCarByYearDescendingly(cars) {
         swapp = false;
         for (let i = 0; i < result.length - 1; i++) {
             if (result[i].year < result[i + 1].year) {
-                let temp = result[i];
+                let variabelKosong = result[i];
                 result[i] = result[i + 1];
-                result[i + 1] = temp;
+                result[i + 1] = variabelKosong;
                 swapp = true;
             }
         }
